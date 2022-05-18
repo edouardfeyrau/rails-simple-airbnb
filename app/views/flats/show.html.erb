@@ -1,0 +1,70 @@
+<div class="flat-general">
+  <div class="map" style="background-image:url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465')">
+  </div>
+  <div class="container">
+    <div class="infos">
+      <div class="card-flat-page">
+        <h1><%= @flat.name %></h1>
+        <h5><%= @flat.address %></h5>
+      </div>
+      <div class="card-flat-page">
+        <h2>A bit more about the flat...</h2>
+        <p><%= @flat.description %></p>
+      </div>
+      <div class="card-flat-page">
+        <h2>Details</h2>
+        <div class="card-infos">
+          <p><i class="fa-solid fa-people-group"></i> <%= @flat.number_of_guests %></p>
+          <p><i class="fa-solid fa-euro-sign"></i> <%= @flat.price_per_night %></p>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-part">
+      <div class="reservation">
+        <h4>Book this place!</h4>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputFromDate">From</label>
+            <input type="date" class="form-control" id="exampleInputFromdate" placeholder="13/05/2022">
+            <%# <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> %>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputToDate">To</label>
+            <input type="date" class="form-control" id="exampleInputToDate" placeholder="17/05/2022">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="social-media">
+        <p>Share</p>
+        <ul>
+        <li style="display:inline-block"><i class="fab fa-brands fa-instagram-square fa-2x"></i></li>
+        <li style="display:inline-block"><i class="fab fa-solid fa-square-envelope fa-2x"></i></li>
+        <li style="display:inline-block"><i class="fab fa-brands fa-twitter-square fa-2x"></i></li>
+        <li style="display:inline-block"><i class="fab fa-brands fa-facebook-square fa-2x"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%# Code map to get data - exercice    %>
+<%# <img id="map" src='https://api.mapbox.com/[...]?access_token=YOUR-TOKEN-HERE'> %>
+
+<%# insert in css
+.main-container {
+  display: flex;
+}
+#map {
+  height: 100vh;
+}
+.cards {
+  flex-grow: 1;
+}
+#map {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+%>

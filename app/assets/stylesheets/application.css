@@ -13,3 +13,93 @@
  *= require_tree .
  *= require_self
  */
+
+ /* CSS mostly focused on navbar */
+ .header {
+  background-color: #F8F9FA;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px 0px 15px;
+ }
+
+ .header > h3,
+ .header > #header-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+
+ /* CSS mostly focused on index page */
+.card {
+  padding: 0;
+  box-shadow:  5px 5px 14px #a8a8a8, -4px -4px 14px #ffffff;
+}
+
+.card > h4 {
+  margin: 0;
+}
+
+.card-top {
+  background-color: #F8F9FA;
+  padding: 15px;
+}
+
+.card-infos {
+  display: flex;
+}
+
+.card-bottom {
+  background-color: white;
+  padding: 15px;
+  margin: 0 ;
+}
+
+/* CSS mostly focused on show page */
+
+.flat-general {
+  position: relative;
+
+}
+
+.container {
+  position: absolute;
+  top: 300px;
+  left: 30px;
+}
+
+.map {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.infos {
+  margin: 0 auto;
+}
+
+.card-flat-page {
+  background-color: #F8F9FA;
+  box-shadow:  1px 1px 2px #a8a8a8, -1px -1px 2px #ffffff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.bottom-part {
+  margin: 0px auto;
+  position: sticky;
+}
+
+.reservation {
+  background-color: #F8F9FA;
+  padding: 20px;
+  margin: 10px;
+  box-shadow:  1px 1px 2px #a8a8a8, -1px -1px 2px #ffffff;
+}
+
+.social-media {
+  background-color: #F8F9FA;
+  display:flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  box-shadow:  1px 1px 2px #a8a8a8, -1px -1px 2px #ffffff;
+}
